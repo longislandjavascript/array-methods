@@ -8,16 +8,29 @@ const peppers = [
   { name: "dragon's breath", hotness: 10 },
 ];
 
-// Map over peppers and read out a sentence about them - for loop =========
+// Map over peppers and print out a sentence about them - for loop ==================
+let pepperLoopDesc = [];
 for (let i = 0; i < peppers.length; i++) {
-  console.log(
+  pepperLoopDesc.push(
     `The ${peppers[i].name} pepper has a hotness of ${peppers[i].hotness}.`
   );
 }
 
-// Map over peppers and read out a sentence about them - map ==============
+console.log('Pepper descriptions - for loop: ', pepperLoopDesc);
+
+// Map over peppers and print out a sentence about them - map =======================
 let pepperMapDesc = peppers.map(pepper => {
-  return console.log(
-    `The ${pepper.name} pepper has a hotness of ${pepper.hotness}.`
-  );
+  return `The ${pepper.name} pepper has a hotness of ${pepper.hotness}.`;
 });
+
+console.log(`Pepper descriptions - map: `, pepperMapDesc);
+
+// Map over peppers and return a string stating if the pepper is hot or not (hot is any hotness above 3)
+let pepperHotOrNot = peppers.map(pepper => {
+  if (pepper.hotness > 3) {
+    return `${pepper.name} pepper is hot`;
+  }
+  return `${pepper.name} pepper is not too hot`;
+});
+
+console.log('Pepper hot or not: ', pepperHotOrNot);
