@@ -1,5 +1,6 @@
 # array-methods
 [![LIJS Meetup Logo](https://avatars3.githubusercontent.com/u/31260897?v=4&s=200)](https://github.com/lijs-meetup)
+
 Project for the array methods presentation: https://www.meetup.com/long-island-javascript-group/events/242959336/
 
 >**You will need to have Node (version 6.4 or higher) and npm installed to properly run the examples**
@@ -8,7 +9,7 @@ Project for the array methods presentation: https://www.meetup.com/long-island-j
 
   - **complete** - A collection of complete examples of array methods.
 
-  - **not-complete** - a collection of examples that you can complete. Mock data and descriptions are already created for you.
+  - **not-complete** - A collection of examples that you can complete. Mock data and descriptions are already created for you.
 
   - **react** - An example React project that showcases some common array methods.
 
@@ -34,7 +35,15 @@ $ node example.js
 
 **To run**
 
- 
+ From the array-methods directory, change into the not-complete directory and run any of the example files:
+
+```sh
+
+$ cd not-complete
+
+$ node example.js
+
+```
 
  
 
