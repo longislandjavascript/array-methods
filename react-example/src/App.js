@@ -40,7 +40,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Peppers</h1>
+          <h1 className="App-title">LIJS Array Methods - React Example</h1>
         </header>
 
         <div>
@@ -55,7 +55,7 @@ class App extends Component {
 
         <div>
           <h1 className="title">Hot Peppers Only</h1>
-          <p>{this.displayHotPeppers()}</p>
+          {this.displayHotPeppers()}
         </div>
       </div>
     );
