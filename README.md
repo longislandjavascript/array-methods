@@ -11,7 +11,7 @@ Project for the array methods presentation: https://www.meetup.com/long-island-j
 
   - **not-complete** - A collection of examples that you can complete. Mock data and descriptions are already created for you.
 
-  - **react** - An example React project that showcases some common array methods.
+  - **react-example** - An example React project that showcases some common array methods.
 
  
 
@@ -47,15 +47,15 @@ $ node example.js
 
  
 
-## react:
+## react-example:
 
 **To run**
 
-From the array-methods directory, change into the react directory and install the necessary npm packages:
+From the array-methods directory, change into the react-example directory and install the necessary npm packages:
 
 ```sh
 
-$ cd react
+$ cd react-example
 
 $ npm i
 
