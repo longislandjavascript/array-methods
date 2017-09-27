@@ -8,7 +8,7 @@ const peppers = [
   { name: "dragon's breath", hotness: 10 },
 ];
 
-// Find all peppers with a hotness below 3 - for loop ==============
+// Find a pepper with a hotness below 3 - for loop ==============
 let newHotnessLowerFor = [];
 for (let i = 0; i < peppers.length; i++) {
   if (peppers[i].hotness < 3) {
@@ -16,9 +16,9 @@ for (let i = 0; i < peppers.length; i++) {
   }
 }
 
-console.log('Hotness Lower - for loop: ', newHotnessLowerFor);
+console.log('Hotness Lower - for loop: ', newHotnessLowerFor[0]);
 
-// Find all peppers with a hotness below 3 - find ==================
+// Find a pepper with a hotness below 3 - find ==================
 let newHotnessLowerFind = peppers.find(pepper => {
   return pepper.hotness < 3;
 });
