@@ -1,18 +1,34 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+const peppers = [
+  { name: 'cayenne', hotness: 3 },
+  { name: 'habanero', hotness: 5 },
+  { name: 'bell', hotness: 0 },
+  { name: 'jalapeno', hotness: 2 },
+  { name: 'ghost', hotness: 7 },
+  { name: 'carolina reaper', hotness: 9 },
+  { name: "dragon's breath", hotness: 10 },
+];
+
 class App extends Component {
+  displayPepperNames = () => {
+    return peppers.map(pepper => {
+      return (
+        <div className="pepper-name-btn" key={pepper.name}>
+          {pepper.name}
+        </div>
+      );
+    });
+  };
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">Peppers</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div>{this.displayPepperNames()}</div>
       </div>
     );
   }
