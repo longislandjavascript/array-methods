@@ -12,8 +12,8 @@ const peppers = [
 ];
 
 class App extends Component {
-  displayPepperNames = () => {
-    return peppers.map(pepper => {
+  displayPepperNames = arrayOfPeppers => {
+    return arrayOfPeppers.map(pepper => {
       return (
         <div className="pepper-name-btn" key={pepper.name}>
           {pepper.name}
@@ -22,13 +22,41 @@ class App extends Component {
     });
   };
 
+  displayTotalHotness = () => {
+    return peppers.reduce((total, pepper) => {
+      return total + pepper.hotness;
+    }, 0);
+  };
+
+  displayHotPeppers = () => {
+    let hotPeppers = peppers.filter(pepper => {
+      return pepper.hotness > 4;
+    });
+
+    return this.displayPepperNames(hotPeppers);
+  };
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Peppers</h1>
         </header>
-        <div>{this.displayPepperNames()}</div>
+
+        <div>
+          <h1 className="title">All Peppers in Pepper Array</h1>
+          {this.displayPepperNames(peppers)}
+        </div>
+
+        <div>
+          <h1 className="title">Total Hotness of All Peppers</h1>
+          <h2>{this.displayTotalHotness()}</h2>
+        </div>
+
+        <div>
+          <h1 className="title">Hot Peppers Only</h1>
+          <p>{this.displayHotPeppers()}</p>
+        </div>
       </div>
     );
   }
