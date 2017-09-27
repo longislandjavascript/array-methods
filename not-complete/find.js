@@ -9,7 +9,7 @@ const peppers = [
 ];
 
 // Find a pepper with a hotness below 3 - for loop ==============
-//console.log('Hotness Lower - for loop: ', newHotnessLowerFor);
+//console.log('Hotness Lower - for loop: ', newHotnessLowerFor[0]);
 
 // Find a pepper with a hotness below 3 - find ==================
 //console.log('Hotness Lower - find: ', newHotnessLowerFind);
