@@ -1,72 +1,21 @@
-# array-methods
-[![LIJS Meetup Logo](https://avatars3.githubusercontent.com/u/31260897?v=4&s=200)](https://github.com/lijs-meetup)
+[![LIJS Logo](https://raw.githubusercontent.com/longislandjavascript/longislandjavascript/main/public/logo.png)](https://www.lijs.org)
 
-Project for the array methods presentation: https://www.meetup.com/long-island-javascript-group/events/242959336/
+# Meetup Event: September 2017
+### Array Methods and Object Methods
 
->**You will need to have Node (version 6.4 or higher) and npm installed to properly run the examples**
+[View Event on Meetup](https://www.meetup.com/long-island-javascript/events/zjlpklywmbkc/)
 
-# There are 3 directories in this project:
+This repo contains the resources for this event.
 
-  - **complete** - A collection of complete examples of array methods.
+![Event Graphic](event-graphic.png)
 
-  - **not-complete** - A collection of examples that you can complete. Mock data and descriptions are already created for you.
 
-  - **react-example** - An example React project that showcases some common array methods.
+___
 
- 
+### ABOUT OUR GROUP:
 
-## complete:
+Long Island JavaScript is a Meetup group in the Long Island, NY area. We meet on the last Wednesday of each month to discuss and learn about a range of topics and technologies around the JavaScript ecosystem. All skill levels are welcome. Visit our [Meetup page](https://www.meetup.com/long-island-javascript/) to join the group and RSVP for our next event.
 
-**To run**
+🔗 https://www.meetup.com/long-island-javascript/
 
-From the array-methods directory, change into the complete directory and run any of the example files:
-
-```sh
-
-$ cd complete
-
-$ node example.js
-
-```
-
- 
-
-## not-complete:
-
-**To run**
-
- From the array-methods directory, change into the not-complete directory and run any of the example files:
-
-```sh
-
-$ cd not-complete
-
-$ node example.js
-
-```
-
- 
-
-## react-example:
-
-**To run**
-
-From the array-methods directory, change into the react-example directory and install the necessary npm packages:
-
-```sh
-
-$ cd react-example
-
-$ npm i
-
-```
-
- 
-
-You should then be able to start the React example by running the npm start script
-
-```sh
-
-$ npm start
-
-```
+🔗 https://www.lijs.org
